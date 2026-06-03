@@ -1,5 +1,5 @@
 import * as ff from '@google-cloud/functions-framework';
-import { RedisClientRequest, AlertCountRequest, RedisClientResponse } from './src/types/types';
+import { RedisClientRequest, AlertCountRequest, RedisClientResponse } from '@/types/types';
 
 ff.http('alert-count', async (req: ff.Request, res: ff.Response) => {
     const authHeader = req.headers.authorization;
