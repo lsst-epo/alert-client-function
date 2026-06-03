@@ -1,0 +1,23 @@
+{
+  "name": "alert-client-function",
+  "version": "1.0.0",
+  "main": "dist/index.js",
+  "repository": "https://github.com/lsst-epo/alert-client-function.git",
+  "author": "eric.rosas@noirlab.edu",
+  "license": "MIT",
+  "scripts": {
+    "build": "tsc",
+    "start": "functions-framework --target=index",
+    "prestart": "npm run build",
+    "gcp-build": "npm run build"
+  },
+  "dependencies": {
+    "@google-cloud/functions-framework": "^5.0.2",
+    "@google-cloud/logging": "^11.2.1"
+  },
+  "devDependencies": {
+    "@eslint/js": "^10.0.1",
+    "typescript": "^6.0.3",
+    "typescript-eslint": "^8.60.1"
+  }
+}

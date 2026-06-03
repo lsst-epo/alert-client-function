@@ -1,0 +1,1 @@
+gcloud functions deploy alert-client --runtime nodejs22 --trigger-http --allow-unauthenticated --entry-point alert-count --region=us-central1
