@@ -6,9 +6,8 @@
       "strict": true,
       "skipLibCheck": true,
       "outDir": "dist",
-      "baseUrl": ".",
       "paths": {
-        "@/types/*": ["src/types/*"]
+        "@/types/*": ["./src/types/*"]
       }
     },
     "include": ["*"],
