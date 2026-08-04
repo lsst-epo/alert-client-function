@@ -34,7 +34,7 @@ ff.http('alert-count', async (req: ff.Request, res: ff.Response) => {
     // Determine how much time before to query 
     let currentUtcHour = new Date().getUTCHours();
     let queryFrom = "now/d-12h";
-    if(currentUtcHour >= 22) {
+    if(currentUtcHour >= 23) {
         queryFrom = "now/d+12h";
     }
     if (req.path == "/alert-count") {
